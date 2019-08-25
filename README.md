@@ -12,7 +12,8 @@ Code is written with **Go 1.12.5**.
 
 ### Searching
 
-* [Linear Search](Linear-Search/). Find an element in an array.
+- [Linear Search](Linear-Search/). Find an element in an array.
+- [Binary Search](Binary-Search/). Quickly find elements in a sorted array.
 
 ## Credits
 
