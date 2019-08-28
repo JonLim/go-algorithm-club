@@ -114,5 +114,5 @@ By the way, if the value you're looking for is not in the array, then `rightBoun
 
 This is an example of how you can modify the basic binary search to solve other algorithmic problems as well. Of course, it does require that the array is sorted.
 
-*Written for Swift Algorithm Club by Matthijs Hollemans*\
-*Modified for Go Algorithm Club by [Jon Lim](https://github.com/JonLim)*
+*Reference material written for Swift Algorithm Club by Matthijs Hollemans*\
+*Adapted for Go Algorithm Club by [Jon Lim](https://github.com/JonLim)*

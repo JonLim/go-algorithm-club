@@ -208,5 +208,5 @@ Is it a problem that the array must be sorted first? It depends. Keep in mind th
 
 See also [Wikipedia](https://en.wikipedia.org/wiki/Binary_search_algorithm).
 
-*Written for Swift Algorithm Club by Matthijs Hollemans*\
-*Modified for Go Algorithm Club by [Jon Lim](https://github.com/JonLim)*
+*Reference material written for Swift Algorithm Club by Matthijs Hollemans*\
+*Adapted for Go Algorithm Club by [Jon Lim](https://github.com/JonLim)*

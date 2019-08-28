@@ -45,5 +45,5 @@ The best-case performance is **O(1)** but this case is rare because the object w
 
 [Linear search on Wikipedia](https://en.wikipedia.org/wiki/Linear_search)
 
-*Written for Swift Algorithm Club by [Patrick Balestra](http://www.github.com/BalestraPatrick)*\
-*Modified for Go Algorithm Club by [Jon Lim](https://github.com/JonLim)*
+*Reference material written for Swift Algorithm Club by [Patrick Balestra](http://www.github.com/BalestraPatrick)*\
+*Adapted for Go Algorithm Club by [Jon Lim](https://github.com/JonLim)*
