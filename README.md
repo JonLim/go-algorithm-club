@@ -6,16 +6,22 @@ Personally speaking, the goal of this project is to **improve my understanding o
 
 Overall, similarly to the Swift Algorithm Club, the goal is to **explain how algorithms work**, with a focus on clarity and readability of the code, not for a reusable library for your own projects. Much of the explanations will use the Swift Algorithm Club's readmes as a starting point, when possible.
 
-Code is written with **Go 1.12.5**.
+Code is written with **Go 1.12.9**.
 
 ## Algorithms (WIP!)
 
 ### Searching
 
-- [Linear Search](Linear-Search/). Find an element in an array.
-- [Binary Search](Binary-Search/). Quickly find elements in a sorted array.
-- [Count Occurrences](Count-Occurrences/). Count how often a value appears in an array.
-- [Select Minimum / Maximum](Select-Minimum-Maximum/). Find the minimum/maximum value in an array.
+- [Linear Search](Algorithms/Searching/Linear-Search/). Find an element in an array.
+- [Binary Search](Algorithms/Searching/Binary-Search/). Quickly find elements in a sorted array.
+- [Count Occurrences](Algorithms/Searching/Count-Occurrences/). Count how often a value appears in an array.
+- [Select Minimum / Maximum](Algorithms/Searching/Select-Minimum-Maximum/). Find the minimum/maximum value in an array.
+
+### Sorting
+
+#### Basic Sorts
+
+- [Insertion Sort]()
 
 ## Credits
 
