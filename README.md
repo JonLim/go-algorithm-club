@@ -21,7 +21,7 @@ Code is written with **Go 1.12.9**.
 
 #### Basic Sorts
 
-- [Insertion Sort]()
+- [Insertion Sort](Algorithms/Sorting/Insertion-Sort/).
 
 ## Credits
 
