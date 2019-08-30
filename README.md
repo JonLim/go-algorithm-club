@@ -21,9 +21,9 @@ Code is written with **Go 1.12.9**.
 
 #### Basic Sorts
 
-- [Insertion Sort](Algorithms/Sorting/Insertion-Sort/).
-- [Selection Sort](Algorithms/Sorting/Selection-Sort/).
-- [Shell Sort](Algorithms/Sorting/Shell-Sort).
+- [Insertion Sort](Algorithms/Sorting/Insertion-Sort/). Sort values by inserting to correct position.
+- [Selection Sort](Algorithms/Sorting/Selection-Sort/). Sort by comparing values.
+- [Shell Sort](Algorithms/Sorting/Shell-Sort). Improvement of insertion sort, using smaller subsets.
 
 ## Credits
 

@@ -87,7 +87,7 @@ This was a description of the inner loop of the insertion sort algorithm, which 
 
 ## The code
 
-Here is an implementation of insertion sort in Swift:
+Here is an implementation of insertion sort in Go:
 
 ```golang
 func insertionSort(array []int) []int {

@@ -56,7 +56,7 @@ The selection sort is an *in-place* sort because everything happens in the same 
 
 ## The code
 
-Here is an implementation of selection sort in Swift:
+Here is an implementation of selection sort in Go:
 
 ```golang
 func selectionSort(array []int) []int {

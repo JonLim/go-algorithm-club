@@ -59,7 +59,7 @@ Now you know why it's called a "binary" search: in every step it splits the arra
 
 ## The code
 
-Here is a recursive implementation of binary search in Swift:
+Here is a recursive implementation of binary search in Go:
 
 ```golang
 func binarySearch(nums []int, target int) int {
