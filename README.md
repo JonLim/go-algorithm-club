@@ -22,6 +22,8 @@ Code is written with **Go 1.12.9**.
 #### Basic Sorts
 
 - [Insertion Sort](Algorithms/Sorting/Insertion-Sort/).
+- [Selection Sort](Algorithms/Sorting/Selection-Sort/).
+- [Shell Sort](Algorithms/Sorting/Shell-Sort).
 
 ## Credits
 
