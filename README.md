@@ -25,6 +25,10 @@ Code is written with **Go 1.12.9**.
 - [Selection Sort](Algorithms/Sorting/Selection-Sort/). Sort by comparing values.
 - [Shell Sort](Algorithms/Sorting/Shell-Sort). Improvement of insertion sort, using smaller subsets.
 
+#### Fast Sorts
+
+- [Quicksort](Algorithms/Sorting/Quicksort/).
+
 ## Credits
 
 Inspiration for the Go Algorithm Club comes from the [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club), from the Ray Wenderlich community.
