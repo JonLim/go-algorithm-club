@@ -45,11 +45,9 @@ array[len(array)-k] = array[8-4] = array[4] = 9
 
 Conversely, if you were looking for the k-th *smallest* element, you'd use `array[k-1]`.
 
-<!-- CURRENTLY UNDER CONSTRUCTION -->
-
 ## A faster solution
 
-There is a clever algorithm that combines the ideas of [binary search](../Binary-Search/) and [quicksort]() to arrive at an **O(n)** solution.
+There is a clever algorithm that combines the ideas of [binary search](../Binary-Search/) and [quicksort](../../Sorting/Quicksort/) to arrive at an **O(n)** solution.
 
 Let's remember that binary search splits a sorted array in half over and over again, to quickly narrow in on the value you're searching for. That's what we'll do here too.
 
@@ -88,52 +86,54 @@ The index of pivot `9` is 4, and that's exactly the *k* we're looking for. We're
 
 The following function implements these ideas:
 
-```swift
-public func randomizedSelect<T: Comparable>(_ array: [T], order k: Int) -> T {
-  var a = array
+```golang
+func randomizedSelect(array []int, k int) int {
+	if len(array) == 0 {
+		panic("Error finding kth largest of array: length of array is 0")
+	}
 
-  func randomPivot<T: Comparable>(_ a: inout [T], _ low: Int, _ high: Int) -> T {
-    let pivotIndex = random(min: low, max: high)
-    a.swapAt(pivotIndex, high)
-    return a[high]
-  }
+	randomPivot := func(a []int, low int, high int) int {
+		pivotIndex := rand.Intn(high-low) + low
+		a[pivotIndex], a[high] = a[high], a[pivotIndex]
+		return a[high]
+	}
 
-  func randomizedPartition<T: Comparable>(_ a: inout [T], _ low: Int, _ high: Int) -> Int {
-    let pivot = randomPivot(&a, low, high)
-    var i = low
-    for j in low..<high {
-      if a[j] <= pivot {
-        a.swapAt(i, j)
-        i += 1
-      }
-    }
-    a.swapAt(i, high)
-    return i
-  }
+	randomizedPartition := func(a []int, low int, high int) int {
+		pivot := randomPivot(a, low, high)
+		i := low
+		for j := low; j < high; j++ {
+			if a[j] <= pivot {
+				a[i], a[j] = a[j], a[i]
+				i++
+			}
+		}
+		a[i], a[high] = a[high], a[i]
+		return i
+	}
 
-  func randomizedSelect<T: Comparable>(_ a: inout [T], _ low: Int, _ high: Int, _ k: Int) -> T {
-    if low < high {
-      let p = randomizedPartition(&a, low, high)
-      if k == p {
-        return a[p]
-      } else if k < p {
-        return randomizedSelect(&a, low, p - 1, k)
-      } else {
-        return randomizedSelect(&a, p + 1, high, k)
-      }
-    } else {
-      return a[low]
-    }
-  }
+	var randomizedSelect func(a []int, low int, high int, k int) int
+	randomizedSelect = func(a []int, low int, high int, k int) int {
+		if low < high {
+			p := randomizedPartition(a, low, high)
+			if k == p {
+				return a[p]
+			} else if k < p {
+				return randomizedSelect(a, low, p-1, k)
+			} else {
+				return randomizedSelect(a, p+1, high, k)
+			}
+		} else {
+			return a[low]
+		}
+	}
 
-  precondition(a.count > 0)
-  return randomizedSelect(&a, 0, a.count - 1, k)
+	return randomizedSelect(array, 0, len(array)-1, k)
 }
 ```
 
 To keep things readable, the functionality is split into three inner functions:
 
-- `randomPivot()` picks a random number and puts it at the end of the current partition (this is a requirement of the Lomuto partitioning scheme, see the discussion on [quicksort](../Quicksort/) for more details).
+- `randomPivot()` picks a random number and puts it at the end of the current partition (this is a requirement of the Lomuto partitioning scheme, see the discussion on [quicksort](../../Sorting/Quicksort/) for more details).
 
 - `randomizedPartition()` is Lomuto's partitioning scheme from quicksort. When this completes, the randomly chosen pivot is in its final sorted position in the array. It returns the array index of the pivot.
 
@@ -141,7 +141,7 @@ To keep things readable, the functionality is split into three inner functions:
 
 Pretty cool, huh? Normally quicksort is an **O(n log n)** algorithm, but because we only partition smaller and smaller slices of the array, the running time of `randomizedSelect()` works out to **O(n)**.
 
-> **Note:** This function calculates the *k*-th smallest item in the array, where *k* starts at 0. If you want the *k*-th largest item, call it with `a.count - k`.
+> **Note:** This function calculates the *k*-th smallest item in the array, where *k* starts at 0. If you want the *k*-th largest item, call it with `len(array) - k`.
 
 *Reference material written for Swift Algorithm Club by Daniel Speiser. Additions by Matthijs Hollemans.*\
 *Adapted for Go Algorithm Club by [Jon Lim](https://github.com/JonLim)*

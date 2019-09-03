@@ -16,6 +16,7 @@ Code is written with **Go 1.12.9**.
 - [Binary Search](Algorithms/Searching/Binary-Search/). Quickly find elements in a sorted array.
 - [Count Occurrences](Algorithms/Searching/Count-Occurrences/). Count how often a value appears in an array.
 - [Select Minimum / Maximum](Algorithms/Searching/Select-Minimum-Maximum/). Find the minimum/maximum value in an array.
+- [k-th Largest Element](Algorithms/Searching/Kth-Largest-Element/). Find the k-th largest element in an array, such as the median.
 
 ### Sorting
 
