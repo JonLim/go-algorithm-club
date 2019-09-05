@@ -6,7 +6,7 @@ Personally speaking, the goal of this project is to **improve my understanding o
 
 Overall, similarly to the Swift Algorithm Club, the goal is to **explain how algorithms work**, with a focus on clarity and readability of the code, not for a reusable library for your own projects. Much of the explanations will use the Swift Algorithm Club's readmes as a starting point, when possible.
 
-Code is written with **Go 1.12.9**.
+Code is written with **Go 1.13**.
 
 ## Algorithms (WIP!)
 
@@ -18,7 +18,6 @@ Code is written with **Go 1.12.9**.
 - [Select Minimum / Maximum](Algorithms/Searching/Select-Minimum-Maximum/). Find the minimum/maximum value in an array.
 - [k-th Largest Element](Algorithms/Searching/Kth-Largest-Element/). Find the k-th largest element in an array, such as the median.
 - [Selection Sampling](Algorithms/Searching/Selection-Sampling/). Randomly choose a bunch of items from a collection.
-- [Union-Find](). Keeps track of disjoint sets and lets you quickly merge them.
 
 ### Sorting
 

@@ -199,5 +199,5 @@ The performance of this second algorithm is **O(n)** as it may require a pass th
 
 Based on code from Algorithm Alley, Dr. Dobb's Magazine, October 1993.
 
-*Reference material written for Swift Algorithm Club by Matthijs Hollemans*
+*Reference material written for Swift Algorithm Club by Matthijs Hollemans*\
 *Adapted for Go Algorithm Club by [Jon Lim](https://github.com/JonLim)*
