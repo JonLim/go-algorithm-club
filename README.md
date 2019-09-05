@@ -33,6 +33,16 @@ Code is written with **Go 1.13**.
 - [Merge Sort]().
 - [Heap Sort]().
 
+## Running Tests
+
+Once you've cloned the directory locally, from the root directory og `go-algorithm-club`, you can run `go test ./...` in terminal and run all of the current tests!
+
+Each algorithm and/or data structure has its own section in the directory, which can contain:
+
+- A `README` file, which explains the theory of the algorithm, as well as using examples to illustrate how they work
+- A Go file, which contains all of the code found in the `README`
+- A Go test file, which has testing scenarios for all of the code found in the Go file
+
 ## Credits
 
 Inspiration for the Go Algorithm Club comes from the [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club), from the Ray Wenderlich community.
