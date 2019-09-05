@@ -17,6 +17,8 @@ Code is written with **Go 1.12.9**.
 - [Count Occurrences](Algorithms/Searching/Count-Occurrences/). Count how often a value appears in an array.
 - [Select Minimum / Maximum](Algorithms/Searching/Select-Minimum-Maximum/). Find the minimum/maximum value in an array.
 - [k-th Largest Element](Algorithms/Searching/Kth-Largest-Element/). Find the k-th largest element in an array, such as the median.
+- [Selection Sampling](Algorithms/Searching/Selection-Sampling/). Randomly choose a bunch of items from a collection.
+- [Union-Find](). Keeps track of disjoint sets and lets you quickly merge them.
 
 ### Sorting
 
@@ -29,6 +31,8 @@ Code is written with **Go 1.12.9**.
 #### Fast Sorts
 
 - [Quicksort](Algorithms/Sorting/Quicksort/).
+- [Merge Sort]().
+- [Heap Sort]().
 
 ## Credits
 
