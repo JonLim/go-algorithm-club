@@ -1,5 +1,6 @@
 package unionfind
 
+/** TODO: make this better laid out for examples
 func UnionFind() {
 	index, parent, size := map[int]int{}, []int{}, []int{}
 
@@ -53,3 +54,4 @@ func UnionFind() {
 		}
 	}
 }
+**/
