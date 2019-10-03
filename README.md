@@ -30,7 +30,7 @@ Code is written with **Go 1.13**.
 #### Fast Sorts
 
 - [Quicksort](Algorithms/Sorting/Quicksort/).
-- [Merge Sort]().
+- [Merge Sort](Algorithms/Sorting/Merge-Sort/).
 - [Heap Sort]().
 
 ## Running Tests
