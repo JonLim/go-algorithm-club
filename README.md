@@ -1,5 +1,7 @@
 # Welcome to the Go Algorithm Club!
 
+[![CircleCI](https://circleci.com/gh/JonLim/go-algorithm-club.svg?style=svg)](https://circleci.com/gh/JonLim/go-algorithm-club)
+
 Inspired by the [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club), the aim is to showcase implementations of popular algorithms and data structures in [Go](https://golang.org/), with detailed explanations of how they work.
 
 Personally speaking, the goal of this project is to **improve my understanding of how algorithms work**, primarily using Go for implementation, as that is what I work with, and choose to work with, in my daily programming work.
@@ -30,7 +32,7 @@ Code is written with **Go 1.13**.
 #### Fast Sorts
 
 - [Quicksort](Algorithms/Sorting/Quicksort/).
-- [Merge Sort]().
+- [Merge Sort](Algorithms/Sorting/Merge-Sort/).
 - [Heap Sort]().
 
 ## Running Tests
