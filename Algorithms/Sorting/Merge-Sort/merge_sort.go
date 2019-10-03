@@ -1,9 +1,5 @@
 package mergesort
 
-import (
-	"utils/mathint"
-)
-
 func mergeSort(array []int) []int {
 	if len(array) <= 1 {
 		return array
@@ -62,8 +58,8 @@ func mergeSortBottomUp(array []int) []int {
 		for i < n {
 			j, l, r := i, i, i+width
 
-			lmax := mathint.Min(l+width, n)
-			rmax := mathint.Min(r+width, n)
+			lmax := min(l+width, n)
+			rmax := min(r+width, n)
 
 			for l < lmax && r < rmax {
 				if z[d][l] < z[d][r] {
@@ -96,4 +92,11 @@ func mergeSortBottomUp(array []int) []int {
 	}
 
 	return z[d]
+}
+
+func min(a, b int) int {
+	if b < a {
+		return b
+	}
+	return a
 }
