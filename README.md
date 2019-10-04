@@ -35,6 +35,12 @@ Code is written with **Go 1.13**.
 - [Merge Sort](Algorithms/Sorting/Merge-Sort/).
 - [Heap Sort]().
 
+## Data Structures
+
+### Queues
+
+- [Stack](Data-Structures/Queues/Stack/). Last in, first out.
+
 ## Running Tests
 
 Once you've cloned the directory locally, from the root directory og `go-algorithm-club`, you can run `go test ./...` in terminal and run all of the current tests!
