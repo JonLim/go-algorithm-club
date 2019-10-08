@@ -40,6 +40,7 @@ Code is written with **Go 1.13**.
 ### Queues
 
 - [Stack](Data-Structures/Queues/Stack/). Last in, first out.
+- [Queue](Data-Structures/Queues/Queue/). First in, first out.
 
 ## Running Tests
 
