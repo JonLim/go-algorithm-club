@@ -42,6 +42,10 @@ Code is written with **Go 1.13**.
 - [Stack](Data-Structures/Queues/Stack/). Last in, first out.
 - [Queue](Data-Structures/Queues/Queue/). First in, first out.
 
+## Miscellaneous
+
+- [Shuffle](Misc/Shuffle/). Randomly re-arranges the contents of an array.
+
 ## Running Tests
 
 Once you've cloned the directory locally, from the root directory og `go-algorithm-club`, you can run `go test ./...` in terminal and run all of the current tests!
