@@ -1,6 +1,7 @@
 # Welcome to the Go Algorithm Club!
 
 [![CircleCI](https://circleci.com/gh/JonLim/go-algorithm-club.svg?style=svg)](https://circleci.com/gh/JonLim/go-algorithm-club)
+[![Go Report Card](https://goreportcard.com/badge/github.com/JonLim/go-algorithm-club)](https://goreportcard.com/report/github.com/JonLim/go-algorithm-club)
 
 Inspired by the [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club), the aim is to showcase implementations of popular algorithms and data structures in [Go](https://golang.org/), with detailed explanations of how they work.
 

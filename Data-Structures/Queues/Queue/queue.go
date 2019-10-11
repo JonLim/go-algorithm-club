@@ -1,6 +1,6 @@
 package queue
 
-type Queue interface {
+type queue interface {
 	isEmpty() bool
 	count() int
 	enqueue(element interface{})
