@@ -1,6 +1,6 @@
 package stack
 
-type Stack interface {
+type stack interface {
 	isEmpty() bool
 	count() int
 	push(element interface{})

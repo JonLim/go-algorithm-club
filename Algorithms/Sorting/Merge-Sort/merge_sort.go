@@ -7,7 +7,7 @@ func mergeSort(array []int) []int {
 
 	middleIndex := len(array) / 2
 	leftArray := mergeSort(array[0:middleIndex])
-	rightArray := mergeSort(array[middleIndex:len(array)])
+	rightArray := mergeSort(array[middleIndex:])
 
 	return merge(leftArray, rightArray)
 }
